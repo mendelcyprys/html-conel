@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>About CGI</title>
+    </head>
+    <body>
+        <h1>What can Python do for us?</h1>
+        
+        <p>
+            First we will serve the contents of this folder using the
+            built in <em>http.server</em> module.
+        </p>
+
+        <p>To do this use the <code>python -m http.server</code> command.</p>
+
+        <p>
+            Now say that we a have list of all students and their ages
+            stored in a file in CSV file.
+            <br />
+            This information can change at any time, we want the current
+            information from the file to be displayed in a table
+            when a person visits the page.
+            <br />
+            When the user visits the page, we want Python to read the file for
+            us and generate the HTML resopnse.
+        </p>
+
+        <p>Have a look at the file <a href="names.txt">here</a>.</p>
+
+        <p>But we can't always just send the user to a text file.</p>
+        <ul>
+            <li>We might want to format the data nicely.</li>
+            <li>We might have to query a database for the correct information.</li>
+            <li>We may have to look into multiple files to get information for one page.</li>
+            <li>
+                We may want to do some security checks before sharing information, like
+                having a log in system.
+            </li>
+        </ul>
+
+        <p>
+            If we start the server with the command
+            <code>python -m http.server --cgi</code>,
+            the server is configured to look treat the files in the
+            <code>cgi-bin/</code> folder as executable CGI Python files.
+        </p>
+
+        <p>Back to <a href="list.html">Menu page</a></p>
+    </body>
+</html>

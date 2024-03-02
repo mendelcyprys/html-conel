@@ -1,0 +1,10 @@
+Steve Coleman,45
+Emily Johnson,22
+Michael Smith,20
+Jessica Davis,24
+David Wilson,19
+Sarah Thompson,21
+Matthew Brown,23
+Amanda Garcia,25
+Christopher Martinez,22
+Jennifer Hernandez,20
